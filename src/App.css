@@ -1,38 +1,123 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.wrapper{
+  background: linear-gradient(rgb(138, 25, 243), rgb(42, 42, 167));
+  width: 400px;
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+.search-bar{
+  margin-top: 20px;
+}
+.search-bar input{
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+  text-align: center;
+}
+.search-btn{
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 0;
+  background: linear-gradient(rgb(27, 27, 108), rgb(188, 188, 218));
+  color: #fff;
+}
+.temp{
+  color: #fff;
+  font-size: 4rem;
+  /* margin-top: 20px; */
+}
+.city{
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.cloud-image img{
+  width: 50%;
+}
+
+.humidity img{
+  width: 20px;
+  height: 18px;
+  margin-top: 6px;
+}
+.wind img{
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+}
+.icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  color: #fff;
+  /* background-color: red; */
 }
-
-.App-link {
-  color: #61dafb;
+.humidity{
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wind{
+  display: flex;
+}
+.description .data{
+  font-size: 1.2rem;
+}
+.description .text{
+  font-size: 0.8rem;
+}
+.description{
+  margin-left: 10px;
+}
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.weatherData h3{
+  color: #fff;
+}
+.weather-description{
+  color: #fff;
+  font-size: 22px;
+}
+@media(max-width: 400px){
+  .wrapper{
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .description .data{
+    font-size: 1rem;
+  }
+  .description .text{
+    font-size: 0.7rem;
+  }
+  .icons{
+    gap: 20%;
+  }
+  .temp{
+    font-size: 3rem;
+    /* margin-top: 20px; */
+  }
+  .city{
+    font-size: 1.8rem;
+    margin-top: 10px;
   }
 }
