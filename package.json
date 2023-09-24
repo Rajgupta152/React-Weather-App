@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Rajgupta152.github.io/React-weather-app",
+  "homepage": "https://Rajgupta152.github.io/React-Weather-App",
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
